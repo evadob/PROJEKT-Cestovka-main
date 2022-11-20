@@ -99,6 +99,18 @@ html {
   text-shadow: 2px 2px 10px #000000;
 }
 
+a.tour__title--big:link,
+a.tour__title--big:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a.tour__title--big:hover,
+a.tour__title--big:active {
+  color: #f03000;
+  text-decoration: none;
+}
+
 .tour__title--big {
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
@@ -107,6 +119,7 @@ html {
 }
 
 .tour__subtitle {
+  margin-top: 10px;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
@@ -324,6 +337,7 @@ img.services__icon {
 }
 
 .info__heading {
+  margin-bottom: 10px;
   color: #888888;
   text-transform: uppercase;
 }
@@ -394,5 +408,102 @@ img.services__icon {
   }
   .vacation__gallery {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.textpage__main-heading {
+  margin-bottom: 30px;
+  color: #f03000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+}
+
+.textpage__main-heading::before {
+  content: "";
+  display: block;
+  margin: 50px auto 30px auto;
+  width: 440px;
+  height: 2px;
+  background-color: #f03000;
+}
+
+.textpage__paragraph {
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.textpage__heading {
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+}
+
+.textpage__photo {
+  background-image: url(../images/tp_italy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.tour-last-minute__image--textpagetop {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: url(../images/lodicka.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 150px;
+  position: relative;
+}
+
+.tour-last-minute__image--small.tour__image--top {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .textpage__main-heading::before {
+    content: "";
+    display: block;
+    margin: 50px auto 30px auto;
+    width: 728px;
+    height: 2px;
+    background-color: #f03000;
+  }
+  .textpage__sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .tour-last-minute__image--textpagetop {
+    grid-column: 1/3;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .tour-last-minute__image--small.tour__image--top {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  .textpage__main-heading::before {
+    content: "";
+    display: block;
+    margin: 50px auto 30px auto;
+    width: 960px;
+    height: 2px;
+    background-color: #f03000;
+  }
+  .textpage__photo {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 500px;
+  }
+  .textpage__sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  .tour-last-minute__image--textpagetop {
+    grid-column: 1/2;
   }
 }/*# sourceMappingURL=style.css.map */
